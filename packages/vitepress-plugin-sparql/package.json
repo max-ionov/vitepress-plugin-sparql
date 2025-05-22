@@ -1,0 +1,37 @@
+{
+  "name": "vitepress-plugin-sparql",
+  "version": "1.0.0",
+  "type": "module",
+  "private": false,
+  "description": "A VitePress plugin that adds support for in-place SPARQL queries and forms to customize them",
+  "author": "Max Ionov",
+  "license": "Apache-2.0",
+  "main": "dist/vitepress-plugin-sparql.cjs.js",
+  "module": "dist/vitepress-plugin-sparql.es.js",
+  "exports": {
+    ".": {
+      "require": "./dist/vitepress-plugin-sparql.cjs.js",
+      "import": "./dist/vitepress-plugin-sparql.es.js"
+    },
+    "./SparqlForm.vue": "./src/SparqlForm.vue"
+  },
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1",
+    "vue-tsc": "^2.1.10"
+  },
+  "peerDependencies": {
+    "vitepress": "^1.5.0",
+    "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "@comunica/query-sparql": "^4.0.2"
+  }
+}

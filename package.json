@@ -6,6 +6,6 @@
   ],
   "scripts": {
     "build": "npm run build --workspace=vitepress-plugin-sparql",
-    "dev": "npm run dev --workspace=vitepress-plugin-sparql"
+    "dev:demo": "npm run build --workspace=vitepress-plugin-sparql && npm run dev --workspace=vitepress-plugin-sparql-demo"
   }
 }

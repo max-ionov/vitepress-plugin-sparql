@@ -1,9 +1,14 @@
 {
+  "name": "vitepress-plugin-sparql-demo",
+  "private": true,
+  "dependencies": {
+    "vitepress-plugin-sparql": "*"
+  },
   "devDependencies": {
     "vitepress": "^1.5.0"
   },
   "scripts": {
-    "docs:dev": "vitepress dev",
+    "dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   }
