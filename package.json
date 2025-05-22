@@ -1,0 +1,11 @@
+{
+  "name": "vitepress-plugin-sparql-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=vitepress-plugin-sparql",
+    "dev": "npm run dev --workspace=vitepress-plugin-sparql"
+  }
+}
