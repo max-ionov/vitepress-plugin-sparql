@@ -15,8 +15,6 @@ for (let param of props.config.parameters ?? []) {
   param.value = param.value ?? "";
 }
 
-console.log("props of the component", props.sparql, props.template, props.config);
-
 const btnSubmitDisabled = ref(false);
 const queryEngine = new QueryEngine();
 
@@ -26,7 +24,6 @@ const resultsLoading = ref(false);
 const getQueryResults = async (sparql: QueryEngine,
                                query: string,
                                endpoints: string[]) => {
-  console.log("query", query);
   const bindingsStream = await sparql.queryBindings(query, { sources: [endpoints[0], ...endpoints.slice(1)]})
   const bindings = await bindingsStream?.toArray()
 
@@ -41,8 +38,6 @@ const getQueryResults = async (sparql: QueryEngine,
     result.push(entryObject);
   }
 
-  console.log("result", result);
-
   return result
 }
 
@@ -54,7 +49,6 @@ const btnClick = async () => {
   btnSubmitDisabled.value = true;
   let query = props.sparql;
   for (let param of props.config.parameters) {
-    console.log(param.value);
     query = query.replace(new RegExp(`\\$\\{${param.variable}\\}`, 'g'), param.value);
   }
 

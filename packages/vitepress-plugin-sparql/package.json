@@ -1,13 +1,22 @@
 {
   "name": "vitepress-plugin-sparql",
-  "version": "1.0.0",
+  "version": "0.3.0",
   "type": "module",
   "private": false,
   "description": "A VitePress plugin that adds support for in-place SPARQL queries and forms to customize them",
   "author": "Max Ionov",
   "license": "Apache-2.0",
+  "keywords": [
+    "vitepress",
+    "vitepress-plugin",
+    "sparql"
+  ],
   "main": "dist/vitepress-plugin-sparql.cjs.js",
   "module": "dist/vitepress-plugin-sparql.es.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/max-ionov/vitepress-plugin-sparql.git"
+  },
   "exports": {
     ".": {
       "require": "./dist/vitepress-plugin-sparql.cjs.js",
