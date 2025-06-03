@@ -8,5 +8,6 @@
     "build": "npm run build --workspace=vitepress-plugin-sparql",
     "demo:prod": "npm run docs:build --workspace=vitepress-plugin-sparql-demo && npm run docs:preview --workspace=vitepress-plugin-sparql-demo",
     "demo:dev": "npm run dev --workspace=vitepress-plugin-sparql-demo"
-  }
+  },
+  "version": "0.0.1"
 }
