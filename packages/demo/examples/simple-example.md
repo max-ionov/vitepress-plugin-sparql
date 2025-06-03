@@ -29,12 +29,6 @@ Here we are going to query DBnary to extract English definitions of a word in an
 }
 ```
 
-```markdown result
-| Entity                    | Lemma     | Language |
-| ------------------------- | --------- | -------- |
-| ${form} | ${label} | ${lang}  |
-```
-
 ```sparql
 PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
 PREFIX lime: <http://www.w3.org/ns/lemon/lime#>

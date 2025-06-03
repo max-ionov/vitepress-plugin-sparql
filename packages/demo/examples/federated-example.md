@@ -23,12 +23,6 @@ the [Turtle source example](./ttl-example.md), but this time we will also fetch 
 }
 ```
 
-```markdown result
-| Entity                    | Lemma     | Language |
-| ------------------------- | --------- | -------- |
-| ${form} | ${verb2} | ${lang}  |
-```
-
 ```sparql
 PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
 PREFIX lime: <http://www.w3.org/ns/lemon/lime#>

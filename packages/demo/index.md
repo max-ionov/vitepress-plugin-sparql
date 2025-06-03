@@ -22,16 +22,3 @@ features:
   - title: Rich search forms and result templates
     details: Create input elements and specify the result template using a simple Markdown extension
 ---
-
-# Basic example
-
-:::form
-```sparql
-SELECT word
-WHERE {
-  ?s ?p ?o .
-}
-```
-:::form
-
-[More examples](examples/index.md)
