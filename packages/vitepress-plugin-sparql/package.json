@@ -1,6 +1,6 @@
 {
   "name": "vitepress-plugin-sparql",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "type": "module",
   "private": false,
   "description": "A VitePress plugin that adds support for in-place SPARQL queries and forms to customize them",

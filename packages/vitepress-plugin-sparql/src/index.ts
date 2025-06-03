@@ -1,4 +1,5 @@
 import {Plugin} from "vite";
+import SparqlForm from './SparqlForm.vue';
 
 type StringFunctionMap = Record<string, (input: string) => string>;
 
@@ -31,6 +32,8 @@ function parseSparqlBlock(block: string, md: any) {
         template: objToSafeJSON(renderers[template[0]](template[1]))
     }
 }
+
+export { SparqlForm }
 
 export function SparqlPlugin(): Plugin {
     let markdown: any;

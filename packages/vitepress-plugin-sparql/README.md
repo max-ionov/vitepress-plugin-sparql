@@ -11,6 +11,19 @@ To add the plugin to your VitePress project, run:
 npm add vitepress-plugin-sparql
 ```
 
+In your `vitepress/config.js` file, add the plugin:
+
+```js
+import { SparqlPlugin } from 'vitepress-plugin-sparql'
+
+export default defineConfig({
+    // ...
+    vite: {
+        plugins: [SparqlPlugin()]
+    }
+})
+```
+
 ## Usage
 
 SPARQL blocks can be created by adding a custom container `:::form:` that contains 
