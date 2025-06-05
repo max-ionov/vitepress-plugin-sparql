@@ -88,7 +88,7 @@ const btnClick = async () => {
   </div>
 </template>
 
-<style scoped>
+<style>
 thead td {
   font-weight: bold;
 }
