@@ -24,7 +24,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/max-ionov/vitepress-sparql-plugin-demo' },
+      { icon: 'github', link: 'https://github.com/max-ionov/vitepress-plugin-sparql' },
     ]
   },
   vite: {
