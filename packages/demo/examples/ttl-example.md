@@ -4,6 +4,7 @@ This is a slightly more complex example showing querying over several Turtle fil
 We are going to create a page searching for aspect pairs in 3 languages: Bosnian, Croatian and Serbian.
 
 :::form
+
 ```json params
 {
   "endpoints": [
@@ -34,19 +35,16 @@ SELECT ?lemma ?language
 WHERE {
     ?lexicon lime:entry ?s ;
              lime:language ?language .
-    ?s a ontolex:LexicalEntry .
-    ?s ontolex:canonicalForm ?form  .
-    ?form ontolex:writtenRep "${verb}" .
+    ?s ontolex:canonicalForm/ontolex:writtenRep "${verb}" .
+    ?s2 ontolex:canonicalForm/ontolex:writtenRep ?lemma .
     {
-        ?rel vartrans:source ?s .
-        ?rel vartrans:target ?s2 .
-        ?s2 ontolex:canonicalForm/ontolex:writtenRep ?lemma .
+        ?rel vartrans:source ?s ;
+             vartrans:target ?s2 .
     }
     UNION
     {
-        ?rel vartrans:source ?s2 .
-        ?rel vartrans:target ?s .
-        ?s2 ontolex:canonicalForm/ontolex:writtenRep ?lemma .
+        ?rel vartrans:source ?s2 ;
+             vartrans:target ?s .
     }
 }
 ```
