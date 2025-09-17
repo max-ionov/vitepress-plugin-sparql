@@ -24,6 +24,16 @@ export default defineConfig({
 })
 ```
 
+In `theme/config.mts`, register Vue component:
+
+```js
+// with the imports:
+import { SparqlForm } from 'vitepress-plugin-sparql'
+
+// inside enhanceApp():
+app.component('SparqlForm', SparqlForm)
+```
+
 ## Usage
 
 SPARQL blocks can be created by adding a custom container `:::form:` that contains 
