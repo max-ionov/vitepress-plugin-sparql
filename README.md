@@ -9,7 +9,7 @@ and a demo site (`packages/vitepress-plugin-sparql`).
 
 The package is available on [npm](https://www.npmjs.com/package/vitepress-plugin-sparql).
 
-To add it to a Vitepress project, run `npm add vitepress-sparql-plugin`.
+To add it to a Vitepress project, run `npm add vitepress-plugin-sparql`.
 Details on using the plugin can be found in the [package README](./packages/vitepress-plugin-sparql/README.md).
 
 ## Usage
